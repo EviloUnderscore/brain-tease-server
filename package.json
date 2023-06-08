@@ -1,0 +1,30 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EviloUnderscore/brain-tease-server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EviloUnderscore/brain-tease-server/issues"
+  },
+  "homepage": "https://github.com/EviloUnderscore/brain-tease-server#readme",
+  "dependencies": {
+    "@babel/runtime": "^7.22.3",
+    "@hapi/hapi": "^21.3.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.1",
+    "@babel/node": "^7.22.1",
+    "@babel/plugin-transform-runtime": "^7.22.4",
+    "@babel/preset-env": "^7.22.4"
+  }
+}
