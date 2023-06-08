@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "serve": "nodemon --exec babel-node src/server.js"
+    "serve": "npx nodemon --exec babel-node src/server.js"
   },
   "repository": {
     "type": "git",
@@ -19,7 +19,8 @@
   "homepage": "https://github.com/EviloUnderscore/brain-tease-server#readme",
   "dependencies": {
     "@babel/runtime": "^7.22.3",
-    "@hapi/hapi": "^21.3.2"
+    "@hapi/hapi": "^21.3.2",
+    "mysql": "^2.18.1"
   },
   "devDependencies": {
     "@babel/core": "^7.22.1",
