@@ -1,12 +1,16 @@
 import Boom from "@hapi/boom";
-import { fakeData } from "./fake-data";
+import { db } from "../database";
 
 export const getDataRoute = {
     method: "GET",
     path: "/api/datas/{id}",
-    handler: (req, h) => {
+    handler: async (req, h) => {
         const id = req.params.id
-        const data = fakeData.find(data => data.id === id);
+        const { results } = await db.query(
+            'SELECT * FROM users WHERE id=?',
+            [id],
+        );
+        const data = results[0];
         if (!data) throw Boom.notFound(`data doesn't exist with id ${id}`);
         return data;
     }
