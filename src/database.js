@@ -12,6 +12,7 @@ export const db = {
     query: (queryString, escapedValues) =>
         new Promise((resolve, reject) => {
             connection.query(queryString, escapedValues, (error, results, fields) => {
+                console.log(error);
                 if (error) reject(error);
                 resolve({ results, fields });
             })
