@@ -3,7 +3,7 @@ import { db } from "../database";
 
 export const getDataRoute = {
     method: "GET",
-    path: "/api/datas/{id}",
+    path: "/api/users/{id}",
     handler: async (req, h) => {
         const id = req.params.id
         const { results } = await db.query(

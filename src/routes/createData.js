@@ -3,7 +3,7 @@ import { db } from '../database';
 
 export const createDataRoute = {
     method: 'POST',
-    path: '/api/datas/create',
+    path: '/api/users/create',
     handler: async (req, h) => {
         const id = uuid();
         const { firstname = '', lastname = '', mail = ''} = req.payload;

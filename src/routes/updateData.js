@@ -2,7 +2,7 @@ import { db } from '../database';
 
 export const updateDataRoute = {
     method: 'POST',
-    path: '/api/datas/{id}/update',
+    path: '/api/users/{id}/update',
     handler: async (req, h) => {
         const { id } = req.params;
         const { firstname, lastname, mail} = req.payload;
