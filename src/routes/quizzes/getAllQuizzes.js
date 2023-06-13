@@ -1,11 +1,11 @@
 import { db } from "../database";
 
-export const getAllDatasRoutes = {
+export const getAllQuizzesRoutes = {
     method: "GET",
-    path: "/api/users",
+    path: "/api/quizzes",
     handler: async (req, h) => {
         const { results } = await db.query(
-            'SELECT * FROM users'
+            'SELECT * FROM quizzes'
         );
         return results;
     }

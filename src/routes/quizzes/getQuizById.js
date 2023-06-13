@@ -1,13 +1,13 @@
 import Boom from "@hapi/boom";
 import { db } from "../database";
 
-export const getDataRoute = {
+export const getQuizByIdRoute = {
     method: "GET",
-    path: "/api/users/{id}",
+    path: "/api/quizzes/{id}",
     handler: async (req, h) => {
         const id = req.params.id
         const { results } = await db.query(
-            'SELECT * FROM users WHERE id=?',
+            'SELECT * FROM quizzes WHERE id=?',
             [id],
         );
         const data = results[0];

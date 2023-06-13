@@ -1,13 +1,13 @@
-import { createDataRoute } from "./createData";
-import { deleteDataRoute } from "./deleteData";
-import { getAllDatasRoutes } from "./getAllDatas";
-import { getDataRoute } from "./getData";
-import { updateDataRoute } from "./updateData";
+import { createQuizRoute } from "./quizzes/createQuiz";
+import { deleteQuizByIdRoute } from "./quizzes/deleteQuizById";
+import { getAllQuizzesRoutes } from "./quizzes/getAllQuizzes";
+import { getQuizByIdRoute } from "./quizzes/getQuizById";
+import { updateQuizByIdRoute } from "./quizzes/updateQuizById";
 
 export default [
-    getAllDatasRoutes,
-    getDataRoute,
-    createDataRoute,
-    updateDataRoute,
-    deleteDataRoute,
+    createQuizRoute,
+    deleteQuizByIdRoute,
+    getAllQuizzesRoutes,
+    getQuizByIdRoute,
+    updateQuizByIdRoute,
 ];

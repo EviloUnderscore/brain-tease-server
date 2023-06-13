@@ -1,12 +1,12 @@
 import { db } from "../database";
 
-export const deleteDataRoute = {
+export const deleteQuizByIdRoute = {
     method: 'DELETE',
-    path: '/api/users/{id}/delete',
+    path: '/api/quizzes/{id}',
     handler: async (req, h) => {
         const { id } = req.params;
         await db.query(
-            'DELETE FROM users WHERE id=?',
+            'DELETE FROM quizzes WHERE id=?',
             [id],
         );
         return { message: 'Success!'}
