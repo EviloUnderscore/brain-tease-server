@@ -11,7 +11,7 @@ export const getQuizByIdRoute = {
             [id],
         );
         const data = results[0];
-        if (!data) throw Boom.notFound(`data doesn't exist with id ${id}`);
+        if (!data) throw Boom.notFound(`Quiz doesn't exist with id ${id}`);
         return data;
     }
 }

@@ -1,3 +1,5 @@
+import { getAllCategoriesRoutes } from "./categories/getAllCategories";
+import { getCategoryByIdRoutes } from "./categories/getCategoryById";
 import { createQuizRoute } from "./quizzes/createQuiz";
 import { deleteQuizByIdRoute } from "./quizzes/deleteQuizById";
 import { getAllQuizzesRoutes } from "./quizzes/getAllQuizzes";
@@ -13,5 +15,7 @@ export default [
     getQuizByIdRoute,
     updateQuizByIdRoute,
     getAllUsersRoutes,
-    getUserByIdRoutes
+    getUserByIdRoutes,
+    getAllCategoriesRoutes,
+    getCategoryByIdRoutes,
 ];

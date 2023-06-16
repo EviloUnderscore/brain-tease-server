@@ -9,5 +9,4 @@ export const getAllQuizzesRoutes = {
         );
         return results;
     }
-
 }
