@@ -13,14 +13,13 @@ export const createQuizRoute = {
         const user = await admin.auth().verifyIdToken(token);
         const user_id = user.user_id;
         const authorName = user.name;
-        console.log(333333333333333333);
-        console.log(user);
+        const createDate = new Date();
        
         await db.query(`
-                INSERT INTO quizzes (id, name, description, category_id, user_id, authorName)
-                VALUES (?, ?, ?, ?, ?, ?)
+                INSERT INTO quizzes (id, name, description, category_id, user_id, authorName, created_at)
+                VALUES (?, ?, ?, ?, ?, ?, ?)
             `,
-            [id, name, description, category_id, user_id, authorName]
+            [id, name, description, category_id, user_id, authorName, createDate]
         );
         return { id, name, description, category_id, user_id, authorName}
     }
