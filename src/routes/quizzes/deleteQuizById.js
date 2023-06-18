@@ -9,8 +9,6 @@ export const deleteQuizByIdRoute = {
         const token = req.headers.authtoken;
         const user = await admin.auth().verifyIdToken(token);
         const userId = user.user_id;
-        console.log(id);
-        console.log(userId);
         await db.query(
             'DELETE FROM quizzes WHERE id=? AND user_id=?',
             [id, userId],

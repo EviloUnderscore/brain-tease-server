@@ -1,8 +1,10 @@
 import { getAllCategoriesRoutes } from "./categories/getAllCategories";
 import { getCategoryByIdRoutes } from "./categories/getCategoryById";
 import { countByQuizRoutes } from "./questions/countByQuiz";
+import { createQuestionRoute } from "./questions/createQuestion";
 import { deleteByQuizIdRoute } from "./questions/deleteByQuizId";
 import { getQuestionsByQuizIdRoute } from "./questions/getQuestionsByQuizId";
+import { updateQuestionByIdRoute } from "./questions/updateQuestion";
 import { createQuizRoute } from "./quizzes/createQuiz";
 import { deleteQuizByIdRoute } from "./quizzes/deleteQuizById";
 import { getAllQuizzesRoutes } from "./quizzes/getAllQuizzes";
@@ -26,4 +28,6 @@ export default [
     deleteByQuizIdRoute,
     getQuizzesByUserRoutes,
     getQuestionsByQuizIdRoute,
+    createQuestionRoute,
+    updateQuestionByIdRoute,
 ];
