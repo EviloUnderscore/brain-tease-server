@@ -3,6 +3,7 @@ import { getCategoryByIdRoutes } from "./categories/getCategoryById";
 import { countByQuizRoutes } from "./questions/countByQuiz";
 import { createQuestionRoute } from "./questions/createQuestion";
 import { deleteByQuizIdRoute } from "./questions/deleteByQuizId";
+import { deleteQuestionByIdRoute } from "./questions/deleteQuestionById";
 import { getQuestionsByQuizIdRoute } from "./questions/getQuestionsByQuizId";
 import { updateQuestionByIdRoute } from "./questions/updateQuestion";
 import { createQuizRoute } from "./quizzes/createQuiz";
@@ -30,4 +31,5 @@ export default [
     getQuestionsByQuizIdRoute,
     createQuestionRoute,
     updateQuestionByIdRoute,
+    deleteQuestionByIdRoute,
 ];
