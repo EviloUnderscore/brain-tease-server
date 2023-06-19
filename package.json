@@ -20,6 +20,7 @@
   "dependencies": {
     "@babel/runtime": "^7.22.3",
     "@hapi/hapi": "^21.3.2",
+    "dotenv": "^16.3.1",
     "firebase-admin": "^11.9.0",
     "mysql": "^2.18.1",
     "uuid": "^9.0.0"
