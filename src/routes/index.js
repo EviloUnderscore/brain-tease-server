@@ -1,5 +1,8 @@
 import { getAllCategoriesRoutes } from "./categories/getAllCategories";
 import { getCategoryByIdRoutes } from "./categories/getCategoryById";
+import { createHistoryRoute } from "./histories/createHistory";
+import { getAllHistoriesRoutes } from "./histories/getAllHistories";
+import { getHistoriesByUserRoutes } from "./histories/getHistoriesByUser";
 import { countByQuizRoutes } from "./questions/countByQuiz";
 import { createQuestionRoute } from "./questions/createQuestion";
 import { deleteByQuizIdRoute } from "./questions/deleteByQuizId";
@@ -32,4 +35,7 @@ export default [
     createQuestionRoute,
     updateQuestionByIdRoute,
     deleteQuestionByIdRoute,
+    createHistoryRoute,
+    getAllHistoriesRoutes,
+    getHistoriesByUserRoutes,
 ];
