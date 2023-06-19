@@ -1,9 +1,9 @@
 runtime: nodejs
 env: flex
 beta_settings:
-  cloud_sql_instances: ?????
+  cloud_sql_instances: brain-tease-0:europe-west1:brain-tease-db
 env_variables:
   DB_USER: hapi-server
   DB_PASS: Hapi123!
   DB_NAME: brain_tease
-  DB_SOCKET: /cloudsql/ ???
+  DB_SOCKET: /cloudsql/brain-tease-0:europe-west1:brain-tease-db
