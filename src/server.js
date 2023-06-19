@@ -1,4 +1,5 @@
 import Hapi from '@hapi/hapi';
+import inert from '@hapi/inert';
 import routes from './routes';
 import { db } from './database';
 import * as admin from 'firebase-admin';
@@ -18,6 +19,8 @@ const start = async () => {
         port: 8080,
         host: '0.0.0.0',
     })
+
+    await server.register(inert);
 
     routes.forEach(route => server.route(route));
 

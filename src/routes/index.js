@@ -1,5 +1,6 @@
 import { getAllCategoriesRoutes } from "./categories/getAllCategories";
 import { getCategoryByIdRoutes } from "./categories/getCategoryById";
+import { filesRoutes, staticFilesRoute } from "./files";
 import { createHistoryRoute } from "./histories/createHistory";
 import { deleteHistoriesByQuizIdRoute } from "./histories/deleteHistoriesByQuizId";
 import { getAllHistoriesRoutes } from "./histories/getAllHistories";
@@ -40,4 +41,6 @@ export default [
     getAllHistoriesRoutes,
     getHistoriesByUserRoutes,
     deleteHistoriesByQuizIdRoute,
+    staticFilesRoute,
+    ...filesRoutes,
 ];
