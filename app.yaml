@@ -1,5 +1,7 @@
 runtime: nodejs
 env: flex
+runtime_config:
+      runtime_version: 18
 beta_settings:
   cloud_sql_instances: brain-tease-0:europe-west1:brain-tease-db
 env_variables:
