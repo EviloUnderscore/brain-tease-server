@@ -4,10 +4,10 @@
   "description": "server of brain-tease app",
   "main": "index.js",
   "engine": {
-    "node": ">=18.0.0"
+    "node": ">=14.0.0"
   },
   "scripts": {
-    "serve": "npx nodemon --exec babel-node src/server.js",
+    "dev": "npx nodemon --exec babel-node src/server.js",
     "build": "babel ./src --out-dir ./build",
     "start": "node ./build/server.js"
   },

@@ -41,6 +41,6 @@ export default [
     getAllHistoriesRoutes,
     getHistoriesByUserRoutes,
     deleteHistoriesByQuizIdRoute,
-    staticFilesRoute,
-    ...filesRoutes,
+    // staticFilesRoute,
+    // ...filesRoutes,
 ];
