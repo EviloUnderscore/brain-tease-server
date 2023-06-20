@@ -24,10 +24,10 @@
   "homepage": "https://github.com/EviloUnderscore/brain-tease-server#readme",
   "dependencies": {
     "@babel/runtime": "^7.22.3",
-    "@hapi/hapi": "^21.3.2",
-    "@hapi/inert": "^7.1.0",
-    "dotenv": "^16.3.1",
-    "firebase-admin": "^11.9.0",
+    "@hapi/hapi": "^19.1.1",
+    "@hapi/inert": "^6.0.1",
+    "dotenv": "^8.2.0",
+    "firebase-admin": "^8.12.1",
     "mysql": "^2.18.1",
     "uuid": "^9.0.0"
   },
