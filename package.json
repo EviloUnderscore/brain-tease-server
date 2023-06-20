@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "engine": {
-    "node": ">=14.0.0"
+    "node": ">=18.0.0"
   },
   "scripts": {
     "serve": "npx nodemon --exec babel-node src/server.js",
@@ -24,8 +24,8 @@
   "homepage": "https://github.com/EviloUnderscore/brain-tease-server#readme",
   "dependencies": {
     "@babel/runtime": "^7.22.3",
-    "@hapi/hapi": "^21.3.2",
-    "@hapi/inert": "^7.1.0",
+    "@hapi/hapi": "^19.1.1",
+    "@hapi/inert": "^6.0.1",
     "dotenv": "^16.3.1",
     "firebase-admin": "^11.9.0",
     "mysql": "^2.18.1",
