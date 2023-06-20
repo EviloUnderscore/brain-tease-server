@@ -11,7 +11,7 @@ export const filesRoutes = angularRoutePaths.map(path => ({
     method: 'GET',
     path,
     handler: (req, h) => {
-        return h.file('dist/tfe/index.html')
+        return h.file('dist/tfe/index.html');
     }
 }))
 
