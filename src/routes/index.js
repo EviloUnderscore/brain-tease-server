@@ -4,6 +4,7 @@ import { filesRoutes, staticFilesRoute } from "./files";
 import { createHistoryRoute } from "./histories/createHistory";
 import { deleteHistoriesByQuizIdRoute } from "./histories/deleteHistoriesByQuizId";
 import { getAllHistoriesRoutes } from "./histories/getAllHistories";
+import { getHistoriesByQuizRoutes } from "./histories/getHistoriesByQuiz";
 import { getHistoriesByUserRoutes } from "./histories/getHistoriesByUser";
 import { countByQuizRoutes } from "./questions/countByQuiz";
 import { createQuestionRoute } from "./questions/createQuestion";
@@ -40,6 +41,7 @@ export default [
     createHistoryRoute,
     getAllHistoriesRoutes,
     getHistoriesByUserRoutes,
+    getHistoriesByQuizRoutes,
     deleteHistoriesByQuizIdRoute,
     staticFilesRoute,
     ...filesRoutes,
